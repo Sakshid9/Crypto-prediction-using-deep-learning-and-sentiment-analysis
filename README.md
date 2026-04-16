@@ -1,55 +1,68 @@
-🚀 Crypto-Predict: Deep Learning & Sentiment AnalysisConnecting Data Science to the Future of FintechThis project bridges the gap between Quantitative Finance and Natural Language Processing. By combining historical price action with real-time social sentiment from Twitter and Reddit, this repository implements state-of-the-art Deep Learning architectures to forecast Bitcoin (BTC) and Ethereum (ETH) prices.
+# 🚀 Crypto-Predict: Deep Learning & Sentiment Analysis
 
-💡 Key Features
-Multi-Source Data Fusion: Integrates market data from yfinance with social media sentiment scores.
-Advanced Technical Indicators: Implements RSI, MACD, Signal Lines, and Moving Averages as model features.
-Sentiment Engine: Utilizes VaderSentiment and TextBlob to quantify market "fear and greed" from social streams.
-Model Zoo: A comprehensive comparison of 10+ deep learning architectures.
-Interactive Visualizations: High-quality plots using Plotly and Seaborn for performance tracking.
+### **The Intersection of Quantitative Finance and AI**
+This repository implements an end-to-end pipeline for forecasting Cryptocurrency prices by fusing **Historical Market Data** with **Real-Time Social Sentiment**. By bridging these two data streams, the project achieves higher predictive accuracy than traditional time-series models.
 
-🧠 Model Architecture & PerformanceWe didn't just stop at simple LSTMs. This project explores the "Future Hiring Skills" of AI by implementing hybrid architectures that are currently trending in high-frequency trading and research.
+---
 
-Comparative Results
-Model                 BTC Accuracy (%)      ETH Accuracy (%)
-GRU (Top Performer)   97.23%                96.47%
-LSTM                  96.34%                95.74%
-CNN-BiLSTM Hybrid     93.42%                94.56%
-RNN                   93.31%                96.16%
-Transformer-LSTM      80.04%                80.37%
+## 💡 Key Features
+* **Hybrid Data Fusion:** Combines market metrics with Twitter/Reddit sentiment scores.
+* **Feature Engineering:** Implements RSI, MACD, and Signal Lines for technical context.
+* **Sentiment Intelligence:** Uses VaderSentiment to quantify market "Fear and Greed."
+* **Advanced Model Suite:** Compares 10+ architectures including Bi-LSTMs and GRUs.
+* **Professional Visualization:** Interactive performance tracking using Plotly and Seaborn.
 
-🛠️ Tech Stack & Hiring SkillsThis project demonstrates proficiency in the following industry-standard domains:
-Deep Learning: Implementation of Gated Recurrent Units (GRU), Bi-Directional LSTMs, and 1D-CNNs.
-NLP (Natural Language Processing): Text cleaning, Tokenization, and Polarity scoring.
-Time-Series Analysis: Handling Multi-Index dataframes, rolling windows, and feature scaling.
-Data Visualization: Designing heatmaps, violin plots, and interactive candlestick charts.
-Financial Engineering: Understanding market volatility and technical momentum.
+---
 
-📂 Project StructurePlaintext├── Crypto_Analysis.ipynb    # Main development and research notebook
-├── Bitcoin_tweets.csv       # Raw sentiment data (Twitter)
-├── SEthB.csv                # Ethereum community sentiment data
-├── eth-sent.csv             # Processed sentiment scores
-└── models/                  # Saved .h5 and .keras model files
+## 🧠 Model Performance
+This project benchmarks multiple deep learning architectures to identify the most robust predictor.
 
-🚀 Getting Started
-Prerequisites
-Bash
-pip install yfinance tensorflow pandas numpy matplotlib seaborn textblob vaderSentiment plotly
-Run the Analysis
-Clone the Repo: git clone https://github.com/Sakshid9/Crypto-prediction-using-deep-learning-and-sentiment-analysis.git
-Open the Notebook: Launch Crypto_Analysis.ipynb in Google Colab or Jupyter.
-Download Data: The notebook uses yfinance to pull live data automatically.
+| Model Architecture | BTC Accuracy | ETH Accuracy |
+| :--- | :---: | :---: |
+| **GRU (Top Performer)** | **97.23%** | **96.47%** |
+| **LSTM** | 96.34% | 95.74% |
+| **CNN-BiLSTM Hybrid** | 93.42% | 94.56% |
+| **RNN** | 93.31% | 96.16% |
+| **Transformer-LSTM** | 80.04% | 80.37% |
 
-📈 Future Roadmap
-[ ] Real-time Deployment: Integrating a Flask/FastAPI backend for live predictions.
-[ ] Advanced Transformers: Implementing BERT-based models for deeper tweet context analysis.
-[ ] Portfolio Optimization: Adding a Reinforcement Learning (RL) agent to suggest buy/sell actions.
+---
 
-🤝 Contributing
-Contributions make the open-source community an amazing place to learn and inspire. Any contributions you make are greatly appreciated.
-Fork the Project
-Create your Feature Branch (git checkout -b feature/AmazingFeature)
-Commit your Changes (git commit -m 'Add some AmazingFeature')
-Push to the Branch (git push origin feature/AmazingFeature)
-Open a Pull Request
+## 🛠️ Tech Stack & Future Hiring Skills
+This project demonstrates expertise in high-demand domains for AI Engineering and Quant roles:
 
-Created with ❤️ by Sakshid9
+* **Deep Learning:** Design and tuning of Gated Recurrent Units (GRU) and 1D-CNNs.
+* **Natural Language Processing:** Text preprocessing, tokenization, and sentiment polarity.
+* **Time-Series Analysis:** Multi-index handling, feature scaling, and rolling windows.
+* **Data Storytelling:** Creating actionable insights through complex data visualization.
+* **Financial Engineering:** Deep understanding of market volatility and momentum.
+
+---
+
+## 📂 Project Structure
+* `Crypto_Analysis.ipynb` — Main research & model development
+* `Bitcoin_tweets.csv` — Raw sentiment data (Twitter)
+* `SEthB.csv` — Community sentiment data (Ethereum)
+* `models/` — Deployment-ready .h5 and .keras files
+
+---
+
+## 🚀 Getting Started
+
+### **Installation**
+`pip install yfinance tensorflow pandas numpy matplotlib seaborn textblob vaderSentiment plotly`
+
+### **Usage**
+1. **Clone the project:** `git clone https://github.com/Sakshid9/Crypto-prediction-using-deep-learning-and-sentiment-analysis.git`
+2. **Execute:** Open `Crypto_Analysis.ipynb` in Google Colab or Jupyter Notebook.
+3. **Data:** The pipeline uses `yfinance` to fetch live data automatically.
+
+---
+
+## 📈 Future Roadmap
+* **Real-time Deployment:** Integrating FastAPI for a live prediction dashboard.
+* **Transformer Optimization:** Fine-tuning BERT for nuanced crypto-slang sentiment.
+* **RL Agent:** Implementing Reinforcement Learning for automated trade execution.
+
+---
+
+*Developed by [Sakshid9](https://github.com/Sakshid9)*
